@@ -17,8 +17,8 @@ span.section_header {
 }
 
 div.column {
-	display:inline;
-	float:left;
+	display:flex;
+	flex-direction:column;
 }
 
 div.left_column {
@@ -27,6 +27,11 @@ div.left_column {
 
 div.right_column {
 	width:4in;
+}
+
+div.gutter {
+	width:8px;
+	height:9in;
 }
 
 div.section {
@@ -40,7 +45,6 @@ div.section {
 	height:20px;
 	border-style:solid;
 	text-align:center;
-	float:left;
 }
 
 span.ability {
@@ -48,18 +52,9 @@ span.ability {
 	color:Blue;
 }
 
-.recovery_group {
-	float:left;
-}
-
 td.effort {
 	vertical-align:center;
 	text-align:center;
-}
-
-div.gutter {
-	width:8px;
-	height:9in;
 }
 
 div.cypher_limit_block {
@@ -76,4 +71,110 @@ div.cypher_block {
 
 div.section_multiblock {
 	min-height:3in;
+}
+
+div.page {
+	min-width:8in;
+	width:8in;
+	min-height:11in;
+	height:11in;
+	display:flex;
+	flex-direction:row;
+	page-break-after:always;
+}
+
+div#page1 {
+	flex-direction:column;
+}
+
+div.columnbox {
+	display:flex;
+	flex-direction:row;
+}
+
+div.advancement_item {
+	display:flex;
+	flex-direction:column;
+	position:absolute;
+	transform:translate(-50%,0%);
+	text-align:center;
+	align-items:center;
+}
+
+div.tier {
+	flex-direction:row;
+}
+
+div.tier {
+	top:5px;
+	left:50%;
+}
+
+div.stats {
+	left:21%;
+	top:19%;
+}
+
+div.effort {
+	left:21%;
+	top:55%;
+}
+
+div.other {
+	left:38%;
+	top:80%;
+}
+
+div.xp {
+	left:62%;
+	top:80%;
+}
+
+div.ncs {
+	left:79%;
+	top:55%;
+}
+
+div.edge{
+	left:79%;
+	top:19%;
+}
+
+div.special_abilities_1 {
+	min-height:6in;
+}
+
+div.skills {
+	min-height:3in;
+}
+
+div.pools {
+	min-height:1in;
+}
+
+div.recovery {
+	min-height:1in;
+}
+
+div.cyphers {
+	min-height:2in;
+}
+
+div.armor {
+	min-height:2in;
+}
+
+div.description {
+	min-height:4in;
+}
+
+div.focus {
+	min-height:2in;
+}
+
+div.advancement {
+	width:4in;
+	height:3in;
+	border-style:none;
+	position:relative;
 }
