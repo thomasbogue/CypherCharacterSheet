@@ -19,6 +19,7 @@ span.section_header {
 div.column {
 	display:flex;
 	flex-direction:column;
+	height:100%;
 }
 
 div.left_column {
@@ -63,15 +64,14 @@ td.effort {
 }
 
 div.cypher_limit_block {
-	float:left;
-	display:left;
-	vertical-align:center;
+	position:absolute;
+	right:0%;
+	bottom:0%;
+	float:right;
 }
 
-div.cypher_block {
-	float:left;
-	display:left;
-	width:2.3in;
+div.cyphers {
+	position:relative;
 }
 
 div.section_multiblock {
@@ -165,7 +165,7 @@ div.recoveries {
 }
 
 div.cyphers {
-	min-height:2in;
+	min-height:3.5in;
 }
 
 div.armor {
@@ -208,9 +208,13 @@ div.section_block {
 }
 
 div.special_abilities_2 {
-	min-height:10in;
+	min-height:10.5in;
+}
+
+div.section_block:has(div.special_abilities_2) {
+	min-height:100%;
 }
 
 div.special_abilities_3 {
-	min-height:10in;
+	min-height:10.5in;
 }
