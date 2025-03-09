@@ -1,0 +1,23 @@
+span.section_header {
+	color:Blue;
+	display:block;
+}
+
+div.column {
+	display:inline;
+	width:300;
+	float:left;
+}
+
+div.left_column {
+	width:3in;
+}
+
+div.right_column {
+	width:3in;
+}
+
+div.section {
+	border-style:solid;
+	display:block;
+}
