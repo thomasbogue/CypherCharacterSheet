@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="cyphercsheet.css"/>
 </head>
 <div id="page1" class="page">
-  <span id="fullname" class="section_header title">Dorren is a Curel Unseelie Explorer who Awakens Dreams</span>
+  <span id="fullname" class="section_header title">Dorren is a Cruel Unseelie Explorer who Awakens Dreams</span>
   <div class="left_column column">
     <span class="section_header">Special Abilities</span>
     <div id="abilities" class="section">
@@ -28,29 +28,83 @@
       </ul>
     </div>
   </div>
+  <div class="gutter column"></div>
   <div class="right_column column">
     <span class="section_header pools_header">Pools</span>
     <table class="pools">
     <tr><th></th><th>M</th><th>S</th><th>I</th></tr>
     <tr>
       <th>Max</th>
-      <td><span class="box" id="max_might">12</span></td>
-      <td><span class="box" id="max_speed">10</span></td>
-      <td><span class="box" id="max_intellect">14</span></td>
+      <td><div class="box" id="max_might">12</div></td>
+      <td><div class="box" id="max_speed">10</div></td>
+      <td><div class="box" id="max_intellect">14</div></td>
     </tr>
     <tr>
       <th>Current</th>
-      <td><span class="box" id="cur_might"></span></td>
-      <td><span class="box" id="cur_speed"></span></td>
-      <td><span class="box" id="cur_intellect"></span></td>
+      <td><div class="box" id="cur_might"></div></td>
+      <td><div class="box" id="cur_speed"></div></td>
+      <td><div class="box" id="cur_intellect"></div></td>
     </tr>
     <tr>
       <th>Edge</th>
-      <td><span class="box" id="edge_might"></span>1</td>
-      <td><span class="box" id="edge_speed"></span>0</td>
-      <td><span class="box" id="edge_intellect"></span>0</td>
+      <td><div class="box" id="edge_might">1</div></td>
+      <td><div class="box" id="edge_speed">0</div></td>
+      <td><div class="box" id="edge_intellect">0</div>
+      </td>
     </tr>
     </table>
+    <span class="section_header">Recovery Rolls</span>
+    <table class="recovery">
+        <tr>
+            <td><div class="recovery">1 Action <div class="box"></div></div></td>
+            <td><div class="recovery">1 Minute<div class="box"></div></div></td>
+            <td rowspan=2 class="effort">
+                <div class="effort"><span class="section_header">Effort</span><div class="box">1</div>
+            </td>
+        </tr>
+        <tr>
+                <td><div class="recovery">1 Hour<div class="box"></div></div></td>
+            <td><div class="recovery">10 Hours<div class="box"></div></div></td>
+        </tr>
+    </table>
+    <div class="section_multiblock">
+        <div class="section_block cypher_block">
+            <span class="section_header">Cyphers</span>
+            <div class="section cyphers">
+                    <div class="cypher">
+                            Detonation (web)<br>
+                            Level: 1d6 + 2<br>
+                            Effect: Projects a small physical explosive up to a long distance away taht explodes in an immediate radius and creates sticky strands of goo.  PCs caught in the area must use a Might-based action to get out, difficulty equal to the cypher level.  NPCs break free if their level is higher than the cypher level.
+                    </div>
+            </div>
+        </div>
+        <div class="section_block cypher_limit_block">
+                <span class="section_header">Cypher<br>Limit</span>
+                <div class="section">
+                        2
+                </div>
+        </div>
+    </div>
+    <div class="section_block">
+            <span class="section_header">Armor</span>
+            <div class="section">
+                    Weave of silence, light: 1 Armor when worn, Cost: +1 effort per level for Speed-based tasks
+            </div>
+    </div>
   </div>
+</div>
+<div class="page" id="page2">
+        <div class="section_block">
+                <span class="section_header">Description</span>
+                <div class="section"></div>
+        </div>
+        <div class="section_block">
+                <span class="section_header">Focus Connection</span>
+                <div class="section"></div>
+        </div>
+        <div class="section_block">
+                <span class="section_header">Character Advancement</span>
+                <div class="section"></div>
+        </div>
 </div>
 </html>
