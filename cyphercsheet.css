@@ -52,6 +52,11 @@ span.ability {
 	color:Blue;
 }
 
+div.recovery {
+	display:flex;
+	flex-direction:row;
+}
+
 td.effort {
 	vertical-align:center;
 	text-align:center;
@@ -66,7 +71,7 @@ div.cypher_limit_block {
 div.cypher_block {
 	float:left;
 	display:left;
-	width:3.2in;
+	width:2.3in;
 }
 
 div.section_multiblock {
@@ -81,6 +86,7 @@ div.page {
 	display:flex;
 	flex-direction:row;
 	page-break-after:always;
+	overflow:hidden;
 }
 
 div#page1 {
@@ -150,10 +156,12 @@ div.skills {
 
 div.pools {
 	min-height:1in;
+	border-style:none;
 }
 
-div.recovery {
+div.recoveries {
 	min-height:1in;
+	border-style:none;
 }
 
 div.cyphers {
@@ -177,4 +185,32 @@ div.advancement {
 	height:3in;
 	border-style:none;
 	position:relative;
+}
+
+div.equipment {
+	min-height:5in;
+}
+
+div.additional_cyphers {
+	min-height:2in;
+}
+
+div.section_block {
+	margin:10px;
+}
+
+#page1 div.left_column {
+	width:4.5in;
+}
+
+#page1 div.right_column {
+	width:3.5in;
+}
+
+div.special_abilities_2 {
+	min-height:10in;
+}
+
+div.special_abilities_3 {
+	min-height:10in;
 }
